@@ -3,7 +3,7 @@ package com.javaprojectone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student {
+public class Student implements Namable {
 //    ArrayList<Double> TestArray= new ArrayList<Double> ([]);
 
     private List<Double> StudentGradeList = new ArrayList<Double>();
@@ -24,4 +24,8 @@ public class Student {
 
     }
 
+    @Override
+    public String getName() {
+        return null;
+    }
 }
