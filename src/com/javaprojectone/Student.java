@@ -3,14 +3,17 @@ package com.javaprojectone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student implements Namable {
+public class Student implements Namable,HasLevel {
 //    ArrayList<Double> TestArray= new ArrayList<Double> ([]);
 
     private List<Double> studentGradeList = new ArrayList<Double>();
     private String studentName;
-    Student(List<Double> StudentGradeList, String studentName){
+    private Level studentLevel;
+
+    Student(List<Double> StudentGradeList, String studentName, Level studentLevel){
         this.studentGradeList = StudentGradeList;
         this.studentName = studentName;
+        this.studentLevel = studentLevel;
     }
 //    Student(){
 //
@@ -28,5 +31,10 @@ public class Student implements Namable {
     @Override
     public String getName() {
         return this.studentName;
+    }
+
+    @Override
+    public Level getLevel(){
+        return this.studentLevel;
     }
 }

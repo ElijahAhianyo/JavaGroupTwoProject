@@ -5,8 +5,8 @@ import java.util.List;
 public class NaughtyStudent extends Student{
 
 
-    NaughtyStudent(List<Double> StudentGradeList, String name) {
-        super(StudentGradeList, name); // new Student(StudentGradeList)
+    NaughtyStudent(List<Double> StudentGradeList, String name, Level studentLevel) {
+        super(StudentGradeList, name,studentLevel); // new Student(StudentGradeList)
     }
 
     @Override

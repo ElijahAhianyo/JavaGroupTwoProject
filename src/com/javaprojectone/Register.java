@@ -16,4 +16,11 @@ public class Register {
         }
         return studentNameList;
     }
+    public List<String> getRegisterByLevel(Level studentLevel){
+        List<String> studentStudyingLevelList= new ArrayList<>();
+        for(Namable namable : studentRegisterList){
+//            if((Student)namable.get)
+        }
+
+    }
 }
