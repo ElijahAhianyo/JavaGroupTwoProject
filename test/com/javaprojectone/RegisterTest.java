@@ -8,15 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RegisterTest {
 
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
+//    @BeforeEach
+//    void setUp() {
+//    }
+//
+//    @AfterEach
+//    void tearDown() {
+//    }
 
     @Test
     void getRegister() {
+
     }
 }

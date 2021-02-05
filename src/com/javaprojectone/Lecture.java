@@ -4,20 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lecture {
-    private List<Student> StudentList = new ArrayList<>();
+    Lecture(){
+
+    }
+    private List<Student> studentList = new ArrayList<>();
 
     public void enter(Student studentObject){
-        this.StudentList.add(studentObject);
+        this.studentList.add(studentObject);
 
     }
     public List<Student> getter(){
-        return StudentList;
+        return studentList;
     }
     public Double getHighestAverageGrade(){
         double highest = 0.0;
-        for(Student student: this.StudentList ){
-            if(student.GetAverageGrade()>highest)
-                highest = student.GetAverageGrade();
+        for(Student student: this.studentList ){
+            if(student.getAverageGrade()>highest)
+                highest = student.getAverageGrade();
         }
         return highest;
     }

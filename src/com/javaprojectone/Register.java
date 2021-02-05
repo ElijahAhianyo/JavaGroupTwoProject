@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Register {
-    private List<Namable> studentNamableList = new ArrayList<>();
-    Register(List<Namable> studentNamableList){
-            this.studentNamableList = studentNamableList;
+    private List<Namable> studentRegisterList = new ArrayList<>();
+    Register(List<Namable> studentRegisterList){
+            this.studentRegisterList = studentRegisterList;
     }
 
     public List<String> getRegister(){
         List<String> studentNameList = new ArrayList<>();
-        for(Namable namable : studentNamableList){
+        for(Namable namable : studentRegisterList){
             studentNameList.add(namable.getName());
         }
         return studentNameList;

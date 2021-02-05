@@ -6,26 +6,27 @@ import java.util.List;
 public class Student implements Namable {
 //    ArrayList<Double> TestArray= new ArrayList<Double> ([]);
 
-    private List<Double> StudentGradeList = new ArrayList<Double>();
-
-    Student(List<Double> StudentGradeList){
-        this.StudentGradeList = StudentGradeList;
+    private List<Double> studentGradeList = new ArrayList<Double>();
+    private String studentName;
+    Student(List<Double> StudentGradeList, String studentName){
+        this.studentGradeList = StudentGradeList;
+        this.studentName = studentName;
     }
 //    Student(){
 //
 //    }
 
-    public Double GetAverageGrade(){
-        Double sum = 0.0;
-        for(int i = 0; i< this.StudentGradeList.size();i++){
-            sum += this.StudentGradeList.get(i);
+    public double getAverageGrade(){
+        double sum = 0.0;
+        for(int i = 0; i< this.studentGradeList.size(); i++){
+            sum += this.studentGradeList.get(i);
         }
-        return sum/this.StudentGradeList.size();
+        return sum/this.studentGradeList.size();
 
     }
 
     @Override
     public String getName() {
-        return null;
+        return this.studentName;
     }
 }
