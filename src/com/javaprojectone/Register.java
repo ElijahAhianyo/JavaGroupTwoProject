@@ -16,4 +16,23 @@ public class Register {
         }
         return studentNameList;
     }
+    public List<String> getRegisterByLevel(Level studentLevel){
+        List<String> studentStudyingLevelList= new ArrayList<>();
+        for(Namable namable : studentRegisterList){
+            if(((Student)namable).getLevel() == studentLevel){
+                studentStudyingLevelList.add(namable.getName());
+            }
+        }
+        return studentStudyingLevelList;
+
+    }
+
+    public String printReport(){
+        String  reportString = "";
+
+        for(Enum level: Level.values()){
+
+        }
+        return null;
+    }
 }
