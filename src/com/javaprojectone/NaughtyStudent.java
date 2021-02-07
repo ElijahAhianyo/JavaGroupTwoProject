@@ -2,7 +2,7 @@ package com.javaprojectone;
 
 import java.util.List;
 
-public class NaughtyStudent {
+public class NaughtyStudent extends Student{
 
 
     NaughtyStudent(List<Double> StudentGradeList, String name, Level studentLevel) {
