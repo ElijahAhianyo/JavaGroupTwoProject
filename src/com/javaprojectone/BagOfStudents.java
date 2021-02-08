@@ -3,18 +3,18 @@ package com.javaprojectone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BagOfStudents implements Bag {
-    private List<Bag> studentBagList = new ArrayList<>();
-    public void add(Bag bag){
-        studentBagList.add(bag);
+public class BagOfStudents<T> implements Bag<T> {
+    private List<T> t = new ArrayList<>();
+    public void add(T t){
+        this.t.add(t);
     }
 
-    public void remove(Bag bag){
-        studentBagList.remove(bag);
+    public void remove(T t){
+        this.t.remove(t);
     }
 
-    public void clear(Bag bag){
-        studentBagList.clear();
+    public void clear(){
+        this.t.clear();
     }
 
 }

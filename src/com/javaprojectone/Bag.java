@@ -3,11 +3,11 @@ package com.javaprojectone;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface Bag {
+public interface Bag<T> {
 
-    public void add(Bag bag);
+    public void add(T t);
 
-    public void remove(Bag bag);
+    public void remove(T t);
 
-    public void clear(Bag bag);
+    public void clear();
 }

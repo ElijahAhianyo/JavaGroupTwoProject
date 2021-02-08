@@ -3,17 +3,17 @@ package com.javaprojectone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BagOfLectures implements Bag{
-    private List<Bag> LectureBagList = new ArrayList<>();
-    public void add(Bag bag){
-        LectureBagList.add(bag);
+public class BagOfLectures<T> implements Bag<T>{
+    private List<T> t = new ArrayList<>();
+    public void add(T t){
+        this.t.add(t);
     }
 
-    public void remove(Bag bag){
-        LectureBagList.remove(bag);
+    public void remove(T t){
+        this.t.remove(t);
     }
 
-    public void clear(Bag bag){
-        LectureBagList.clear();
+    public void clear(){
+        this.t.clear();
     }
 }
