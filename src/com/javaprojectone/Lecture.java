@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Lecture {
-    Lecture(){
-
-    }
     private List<Student> studentList = new ArrayList<>();
 
     public void enter(Student studentObject){

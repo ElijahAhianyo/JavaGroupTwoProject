@@ -22,7 +22,8 @@ public class Main {
         lecture.enter(secondStudent);
         System.out.println(student.getAverageGrade());
         System.out.println(naughtyStudent.getAverageGrade());
-
-//        System.out.println(studentObject.GetAverageGrade());
+        for (Enum level: Level.values())
+            System.out.println(level);
+//        System.out.println(Level.values().toString());
     }
 }

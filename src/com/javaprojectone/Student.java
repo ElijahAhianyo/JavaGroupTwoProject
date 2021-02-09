@@ -3,21 +3,19 @@ package com.javaprojectone;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student implements Namable,HasLevel {
+public class Student implements Namable {
 //    ArrayList<Double> TestArray= new ArrayList<Double> ([]);
-
+    private Level level;
     private List<Double> studentGradeList = new ArrayList<Double>();
     private String studentName;
-    private Level studentLevel;
 
-    Student(List<Double> StudentGradeList, String studentName, Level studentLevel){
+    Student(List<Double> StudentGradeList, String studentName, Level level){
         this.studentGradeList = StudentGradeList;
         this.studentName = studentName;
-        this.studentLevel = studentLevel;
+        this.level = level;
+
     }
-//    Student(){
-//
-//    }
+
 
     public double getAverageGrade(){
         double sum = 0.0;
@@ -33,8 +31,7 @@ public class Student implements Namable,HasLevel {
         return this.studentName;
     }
 
-    @Override
     public Level getLevel(){
-        return this.studentLevel;
+        return this.level;
     }
 }
