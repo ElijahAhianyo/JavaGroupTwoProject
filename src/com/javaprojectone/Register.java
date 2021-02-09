@@ -2,25 +2,33 @@ package com.javaprojectone;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Register {
-    private List<Namable> studentRegisterList = new ArrayList<>();
-    Register(List<Namable> studentRegisterList){
+    private List<Student> studentRegisterList = new ArrayList<>();
+    Register(List<Student> studentRegisterList){
             this.studentRegisterList = studentRegisterList;
     }
 
     public List<String> getRegister(){
         List<String> studentNameList = new ArrayList<>();
-        for(Namable namable : studentRegisterList){
-            studentNameList.add(namable.getName());
+        for(Student student : studentRegisterList){
+            studentNameList.add(student.getName());
         }
         return studentNameList;
     }
     public List<String> getRegisterByLevel(Level studentLevel){
-        List<String> studentStudyingLevelList= new ArrayList<>();
-        for(Namable namable : studentRegisterList){
-//            if((Student)namable.get)
+        List<String>  studentNamesByLevelList= new ArrayList<>();
+        for(Student student : studentRegisterList){
+            if(student.getLevel() == studentLevel){
+                studentNamesByLevelList.add(student.getName());
+            }
         }
-
+        return studentNamesByLevelList;
     }
+
+    public List<String> printReport(){
+        M
+    }
+
 }
